@@ -2686,7 +2686,7 @@ document.getElementById('gStop').addEventListener('click',gpsStop);
 
 /* ---------- 순시 지도 (v19: 카카오맵 · 키가 없으면 위성 Esri 지도) ----------
    지도 종류마다 똑같이 쓰도록 작은 연결부(MP)를 둠: 선·점·번호표·말풍선·화면 맞추기 */
-const KAKAO_KEY_FIXED='';   // ← 카카오 JavaScript 키를 여기에 넣으면 모든 직원 화면이 바로 카카오 지도로 열려요
+const KAKAO_KEY_FIXED='9812f9962e7cf286d3cba7d8e6c8b66c';   // ← 카카오 JavaScript 키를 여기에 넣으면 모든 직원 화면이 바로 카카오 지도로 열려요
 const kakaoKey=()=>KAKAO_KEY_FIXED||lsGet('tower3d-kakao-key')||'';
 const mapWant=()=>kakaoKey()&&lsGet('tower3d-mapsrc')!=='esri'?'kakao':'esri';
 let mapOn=false, MP=null, mapLayer=null, liveLayer=null, mapFollow=true, mapErr='';
